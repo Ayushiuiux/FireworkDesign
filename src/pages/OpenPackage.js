@@ -5,6 +5,12 @@ import { useState } from 'react'
 import UnpackAnimationPop from "./UnpackAnimationPop";
 import SingleCard from "./SingleCard";
 import Swiper from "./Swiper";
+import Carousel from './Carousel';
+
+
+
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
 
 export default function OpenPackage(props) {
     const [show, setShow] = useState(false);
@@ -16,10 +22,11 @@ export default function OpenPackage(props) {
 
     const handleClose1 = () => setShow1(false);
     const handleShow1 = () => setShow1(true);
+
     return (
         <>
-            <UnpackAnimationPop show={show} setShow={setShow} handleClose={handleShow} handleClose={handleClose} card={<SingleCard/>}/>
-            <UnpackAnimationPop show={show1} setShow={setShow1} handleShow1={handleShow1} handleClose={handleClose1} card={<Swiper/>}/>
+            <UnpackAnimationPop  show={show} setShow={setShow} handleClose={handleShow} handleClose={handleClose} card={<SingleCard/>}/>
+            <UnpackAnimationPop  show={show1} setShow={setShow1} handleShow1={handleShow1} handleClose={handleClose1} card={<Carousel/>}/>
             <Container>
                 <Row>
                     <Col lg={12}>
@@ -36,6 +43,8 @@ export default function OpenPackage(props) {
                                     <div className="op_allBtn_left">Open for all</div>
                                     <div className="op_allBtn_right">x 11</div>
                                 </a>
+
+                                <a href="./carousel">carousel</a>
                             </div>
                         </div>
                     </Col>

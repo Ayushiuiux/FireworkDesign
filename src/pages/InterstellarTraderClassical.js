@@ -29,14 +29,14 @@ export default function InterstellarTrader() {
                                 </li>
                                 <li className="list-inline-item loader_li">
                                     <div class="intslr_loader">
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
+                                        <ul className="list-inline power_bar">
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item unfill_power"></li>
                                         </ul>
                                     </div>
                                 </li>

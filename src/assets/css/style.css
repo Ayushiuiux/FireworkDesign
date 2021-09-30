@@ -1,3 +1,10 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
 /* Login Interface css start here */
 
 .login_page {
@@ -148,7 +155,9 @@ section.login_page_top {
     background-size: contain;
 }
 
+
 /* Login Interface css close here */
+
 
 /* main Interface page start here */
 
@@ -424,6 +433,7 @@ section.login_page_top {
     align-items: flex-end;
 }
 
+
 /* main Interface page close here */
 
 .characters_box {
@@ -515,6 +525,7 @@ section.login_page_top {
     letter-spacing: .5px;
     font-weight: 300;
 }
+
 
 /* card collection css start here */
 
@@ -733,7 +744,9 @@ section.login_page_top {
     padding-left: 10px;
 }
 
+
 /* card collection page css close here */
+
 
 /* card Synthesis css start here */
 
@@ -944,7 +957,9 @@ section.login_page_top {
     height: 100%;
 }
 
+
 /* card Synthesis css close here */
+
 
 /* Starship page start here */
 
@@ -1156,7 +1171,9 @@ section.login_page_top {
     height: 4rem;
 }
 
+
 /* Starship page close here */
+
 
 /* Starship Equipment page start here */
 
@@ -1333,7 +1350,9 @@ section.login_page_top {
     height: 1.5rem;
 }
 
+
 /* Starship Equipment page close here */
+
 
 /* Starship Upgrade css start here */
 
@@ -1455,7 +1474,9 @@ section.login_page_top {
     opacity: .5;
 }
 
+
 /* Starship Upgrade css close here */
+
 
 /* Starship Mining css start here */
 
@@ -1510,7 +1531,9 @@ section.login_page_top {
     font-size: 17x;
 }
 
+
 /* Starship Mining css close here */
+
 
 /* Startship Risk Mining css start here */
 
@@ -1688,6 +1711,7 @@ section.login_page_top {
 
 
 /* Starship Mining Interface Start */
+
 .smi_card_div {
     padding: 150px 150px 150px 0px;
 }
@@ -1703,7 +1727,6 @@ section.login_page_top {
     width: 250px;
     height: 100vh;
 }
-
 
 .smi_add_div {
     display: flex;
@@ -1733,7 +1756,6 @@ section.login_page_top {
     color: #fff;
 }
 
-
 .smi_add_numdiv .smi_add_chngnum {
     font-size: 28px;
     color: #069706;
@@ -1743,7 +1765,6 @@ section.login_page_top {
     font-size: 14px;
     color: #fff;
 }
-
 
 .smi_leaf_imgdiv {
     display: flex;
@@ -1758,7 +1779,6 @@ section.login_page_top {
     height: auto;
 }
 
-
 .smi_rightleaf_div {
     display: flex;
     height: 100vh;
@@ -1766,7 +1786,6 @@ section.login_page_top {
     justify-content: space-around;
     width: 250px;
 }
-
 
 .smi_add_div_cont2.zero_numb {
     transform: translateX(-56px);
@@ -1797,9 +1816,51 @@ section.login_page_top {
     }
 }
 
+
 /* Starship Mining Interface End */
 
+
 /* Interstellar Trader Start  */
+
+.power_bar {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.power_bar::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -2%;
+    width: 104%;
+    height: 110%;
+    background-image: url('../images/interstellar-page/power-bar.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(5);
+}
+
+.unfill_power {
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    /* border-left: 1px solid grey; */
+    width: 34px;
+    margin-right: 0% !important;
+}
+
+.power_bar .fill_power {
+    display: block;
+    background: #FFBE00;
+    width: 34px;
+    height: 16px;
+    border: 2px solid #b0730d;
+    box-shadow: 0px 0px 20px #ea970e;
+    margin-right: 0px !important;
+}
 
 .interstellar_page {
     background-image: url('../images/interstellar-page/interstellar.png');
@@ -1825,6 +1886,8 @@ section.login_page_top {
 
 .top_right_sign .loader_li {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .top_right_sign .ins_log_li {
@@ -2043,13 +2106,24 @@ section.login_page_top {
     color: #00FF3B;
 }
 
+
 /* Interstellar Trader Start End */
 
 
 /* Card Shop Page Start */
 
+.cardShop_lft_col {
+    display: flex;
+    align-items: center;
+}
+
+.divide-bar {
+    width: 12px;
+}
+
 .cardShop_page_right {
-    padding: 50px;
+    /* padding: 50px; */
+    padding-top: 10px;
 }
 
 .card_shop_page {
@@ -2060,11 +2134,11 @@ section.login_page_top {
 }
 
 .cardShop_page_lft {
-    width: 360px;
+    /* width: 360px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     text-align: left;
     margin-left: 40px;
 }
@@ -2117,11 +2191,12 @@ section.login_page_top {
 
 .pack_div {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 160px;
+    /* width: 160px; */
     height: 160px;
     padding: 10px;
     margin-right: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 .pack_div .pack_img {
@@ -2184,6 +2259,10 @@ section.login_page_top {
     color: grey;
 }
 
+.secTwo .quantity_num2 {
+    color: #3f3f3f;
+}
+
 .pack_link {
     text-decoration: none;
 }
@@ -2195,7 +2274,7 @@ section.login_page_top {
 
 .exclusive_pack_div {
     background-color: rgba(0, 0, 0, 0.3);
-    width: 500px;
+    /* width: 500px; */
     border: 1px solid #836105;
     padding: 20px 10px 0px 10px;
     margin-top: 20px;
@@ -2269,7 +2348,7 @@ section.login_page_top {
     background-image: url('../images/interstellar-page/supreme-bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 500px;
+    /* width: 500px; */
     border: 1px solid #836105;
     padding: 20px 10px 0px 10px;
     margin-top: 20px;
@@ -2330,6 +2409,7 @@ section.login_page_top {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 100%;
 }
 
 .cs_left_partDiv {
@@ -2350,49 +2430,81 @@ section.login_page_top {
     margin-right: 10px;
 }
 
+@media screen and (max-width:1080px) {
+    .pack_div .pack_img {
+        padding: 25px 35px 15px 25px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .divide-bar {
+        display: none;
+    }
+    .pack_div {
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .cardShop_page_lft {
+        margin-left: 0px;
+    }
+}
+
+
 /* Card Shop Page End */
 
+
 /* ----------------------------------------- Confirm Goods Page Start ----------------------------------- */
-.ConfirmGoods_page{
+
+
+/* .ConfirmGoods_page{
     background-image: url('../images/interstellar-page/confirm-goods-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+.confirmGoods_col {
+    display: flex;
+    align-items: center;
 }
 
-.confirmGoods_div{
+.confirmGoods_div {
     margin: 50px;
     text-align: left;
-    padding-left: 100px;
+    /* padding-left: 100px; */
 }
-.cg_head_txt{
+
+.cg_head_txt {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.cg_pack_div{
+.cg_pack_div {
     display: flex;
     margin-top: 30px;
 }
 
-.cg_pack_img{
+.cg_pack_img {
     width: 250px;
     height: auto;
 }
 
-.cg_pack_times{
-        color: #ffffff7a;
-        font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 20px;
+.cg_pack_times {
+    color: #ffffff7a;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
 }
 
-.cg_pack_quantity{
-        font-size: 60px;
-        color: #fff;
-        font-weight: bold;
+.cg_pack_quantity {
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
 }
 
-.cg_pack_buy_btn{
+.cg_pack_buy_btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2405,7 +2517,7 @@ section.login_page_top {
     background-position: right;
 }
 
-.cg_buyBtn_right{
+.cg_buyBtn_right {
     background-image: url('../images/interstellar-page/buy-subtraction.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -2414,44 +2526,59 @@ section.login_page_top {
     letter-spacing: 1px;
 }
 
-.cg_pack_u{
+.cg_pack_u {
     background: #00A37C;
     border-radius: 50%;
     padding: 2px 5px;
     font-size: 13px;
 }
 
-.cg_buyBtn_txt{
+.cg_buyBtn_txt {
     font-size: 18px;
 }
 
-.cg_buyBtn_href{
+.cg_buyBtn_href {
     text-decoration: none;
     color: #fff;
 }
 
-.cg_buyBtn_href:hover{
+.cg_buyBtn_href:hover {
     color: #fff;
 }
 
-.bg_blur_txt{
+.bg_blur_txt {
     color: grey;
     font-size: 30px;
     filter: blur(2px);
     letter-spacing: 6px;
     text-align: end;
 }
+
+@media screen and (max-width:992px) {
+    .confirmGoods_div {
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .cg_pack_img {
+        width: 170px;
+    }
+}
+
+
 /* ----------------------------------------- Confirm Goods Page End ----------------------------------- */
+
 
 /* ----------------------------------------- Open Package Page Start ----------------------------------- */
 
-.op_package_img{
+.op_package_img {
     width: 347px;
     height: auto;
     padding: 50px;
 }
 
-.open_package_nextBtn{
+.open_package_nextBtn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2461,11 +2588,11 @@ section.login_page_top {
     color: #fff;
 }
 
-.open_package_nextBtn:hover{
+.open_package_nextBtn:hover {
     color: #fff;
 }
 
-.open_package_allBtn{
+.open_package_allBtn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2476,26 +2603,26 @@ section.login_page_top {
     color: #fff;
 }
 
-.open_package_allBtn:hover{
+.open_package_allBtn:hover {
     color: #fff;
 }
 
-.open_package_pageBtm{
+.open_package_pageBtm {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.open_package_page{
+.open_package_page {
     margin: 50px;
 }
 
-.op_nextBtn_right{
+.op_nextBtn_right {
     position: relative;
     padding: 0px 25px;
 }
 
-.op_nextBtn_right::before{
+.op_nextBtn_right::before {
     content: '';
     position: absolute;
     top: 0%;
@@ -2508,12 +2635,12 @@ section.login_page_top {
     z-index: -1;
 }
 
-.op_allBtn_right{
+.op_allBtn_right {
     position: relative;
     padding: 0px 25px;
 }
 
-.op_allBtn_right::before{
+.op_allBtn_right::before {
     content: '';
     position: absolute;
     top: 0%;
@@ -2532,13 +2659,13 @@ section.login_page_top {
 
 /* ----------------------------- Wallet Popup Start ---------------------------------------------- */
 
-.wallet_popup_div{
+.wallet_popup_div {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
-.wallet_popup_div .btn-close{
+.wallet_popup_div .btn-close {
     color: #fff;
     filter: invert(1);
     margin: 0%;
@@ -2547,31 +2674,34 @@ section.login_page_top {
     right: 5px;
 }
 
-.wallet_popup_container .modal-header{
+.wallet_popup_container .modal-header {
     justify-content: center;
     position: relative;
     border-bottom: none;
 }
 
-.wallet_popup_container .modal-body{
+.wallet_popup_container .modal-body {
     text-align: center;
     font-size: 25px;
 }
 
 
 /* ----------------------------- Wallet Popup End ---------------------------------------------- */
-.single_card_page{
+
+.single_card_page {
     width: 50%;
     margin: auto;
 }
 
-.single_card_img{
+.single_card_img {
     width: 200px;
     height: auto;
 }
 
+
 /* ---------------------- Swiper ---------------------- */
-.swip_cont{
+
+.swip_cont {
     /* position: relative;
     height: 100%; */
 }
@@ -2582,18 +2712,113 @@ section.login_page_top {
     padding-bottom: 50px;
     position: relative;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
-  }
+}
+
 
 /* ---------------------- Swiper ---------------------- */
+
+
+/* -------------------------------------- Treasuered Pack Page ------------------------------------- */
+
+.treasure_pack_page {
+    position: relative;
+}
+
+.treasure_pack_page::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/interstellar-page/cardshop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.treasure_pack_div {
+    background-image: url('../images/interstellar-page/Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.treasure_content {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    /* background-image: url('../images/interstellar-page/purple-pack.png');
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.treasure_txt_head {
+    color: burlywood;
+    font-size: 25px;
+}
+
+.treasure_txt_para {
+    color: burlywood;
+    font-size: 16px;
+}
+
+.treasure_quantity_div {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.treasure_quant_lft {
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+
+.treasure_unit {
+    background: #00A37C;
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.purple-pack {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.purple_pack_link {
+    color: #fff;
+}
+
+.purple_pack_link:hover {
+    color: #fff;
+}
+
+
+/* -------------------------------------- Treasuered Pack Page ------------------------------------- */

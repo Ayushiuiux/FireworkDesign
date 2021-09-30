@@ -22,6 +22,8 @@ import CardShop from './pages/CardShop';
 import ConfirmGoods from './pages/ConfirmGoods';
 import OpenPackage from './pages/OpenPackage';
 import Swiper from './pages/Swiper';
+import Carousel from './pages/Carousel';
+
 
 function App() {
   return (
@@ -81,6 +83,9 @@ function App() {
           </Route>
           <Route path="/swiper">
             <Swiper/>
+          </Route>
+          <Route path="/carousel">
+            <Carousel/>
           </Route>
         </Switch>
       </BrowserRouter>

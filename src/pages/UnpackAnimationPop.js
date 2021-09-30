@@ -7,10 +7,7 @@ export default function UnpackAnimationPop(props) {
             <Modal show={props.show} onHide={props.handleClose} centered>
                 <Container className="wallet_popup_container">
                     <Row>
-                        <div className="wallet_popup_div">
-                            <Modal.Header onClick={props.handleShow}>
-                                {/* <Modal.Title>Wallet</Modal.Title> */}
-                            </Modal.Header>
+                        <div className="wallet_popup_div">                            
                             <Modal.Body>{props.card} </Modal.Body>
                         </div>
                     </Row>

@@ -11,7 +11,7 @@ import single_left_arrow from '../assets/images/single_left_arrow.png';
 import clock_count from '../assets/images/interstellar-page/clock_count.png';
 // import GreyPattern from '../assets/images/interstellar-page/pattern-bg.png';
 // import BluePattern from '../assets/images/interstellar-page/blue-pattern.png';
-import package_grey from '../assets/images/interstellar-page/package_grey.png';
+import TreasurePack from '../assets/images/interstellar-page/treasured-pack.png';
 import UpArrow from '../assets/images/interstellar-page/up-arrow.png';
 
 
@@ -32,14 +32,14 @@ export default function InterstellarTrader() {
                                 </li>
                                 <li className="list-inline-item loader_li">
                                     <div class="intslr_loader">
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
-                                            <li className="list-inline-item"></li>
+                                        <ul className="list-inline power_bar">
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item fill_power"></li>
+                                            <li className="list-inline-item unfill_power"></li>
+                                            <li className="list-inline-item unfill_power"></li>
+                                            <li className="list-inline-item unfill_power"></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -107,7 +107,7 @@ export default function InterstellarTrader() {
                         </Col>
                         <Col xs="12" md="5">
                             <div className="instrelr_right">
-                                <Image src={package_grey} fluid />
+                                <Image src={TreasurePack} fluid />
                             </div>
                         </Col>
                     </Row>
