@@ -2701,7 +2701,7 @@ section.login_page_top {
 /* ----------------------------- Wallet Popup End ---------------------------------------------- */
 
 .single_card_page {
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
@@ -2887,3 +2887,29 @@ section.login_page_top {
 
 
 /* -------------------------------------- Camp Pack Page ------------------------------------- */
+
+.unpacking_anmtn .modal-dialog {
+    margin: 0;
+}
+
+.unpacking_anmtn .modal-content {
+    padding: 25px;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 80%);
+}
+
+.unpacking_anmtn .modal-header {
+    border: none;
+}
+
+.unpacking_anmtn .modal-header .btn-close {
+    color: #fff;
+    filter: invert(1);
+    opacity: 1;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}

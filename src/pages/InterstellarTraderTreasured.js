@@ -60,7 +60,7 @@ export default function InterstellarTrader() {
                             <div className="instrelr_left">
                                 <ul className="list-inline instrelr_tp_heading">
                                     <li className="list-inline-item">
-                                        <Link to="/interstellar_trader_camp" className="arrow_link">
+                                        <Link to="/interstellar_trader_treasured" className="arrow_link">
                                             <Image src={single_left_arrow} fluid className="single_arrow" />
                                         </Link>
                                     </li>
@@ -90,7 +90,7 @@ export default function InterstellarTrader() {
                                             <li className="list-inline-item"><span>X 0</span></li>
                                         </ul>
                                     </Link>
-                                    <Link to="/card_shop" className="open_buy_grp_btn buy_btn">
+                                    <Link to="/treasuered-pack" className="open_buy_grp_btn buy_btn">
                                         <ul className="list-inline mb-0">
                                             <li className="list-inline-item">Buy Now</li>
                                             <li className="list-inline-item"><span></span></li>

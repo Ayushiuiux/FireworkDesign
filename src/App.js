@@ -23,6 +23,8 @@ import ConfirmGoods from './pages/ConfirmGoods';
 import OpenPackage from './pages/OpenPackage';
 import Swiper from './pages/Swiper';
 import Carousel from './pages/Carousel';
+import TreasueredPack from './pages/TreasueredPack';
+import CampPack from './pages/CampPack';
 
 
 function App() {
@@ -98,6 +100,12 @@ function App() {
           </Route>
           <Route path="/carousel">
             <Carousel/>
+          </Route>
+          <Route path="/treasuered-pack">
+            <TreasueredPack />
+          </Route>
+          <Route path="/camp-pack">
+            <CampPack />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -87,7 +87,7 @@ export default function InterstellarTrader() {
                                             <li className="list-inline-item"><span>X 0</span></li>
                                         </ul>
                                     </Link>
-                                    <Link to="/card_shop" className="open_buy_grp_btn buy_btn">
+                                    <Link to="/camp-pack" className="open_buy_grp_btn buy_btn">
                                         <ul className="list-inline mb-0">
                                             <li className="list-inline-item">Buy Now</li>
                                             <li className="list-inline-item"><span></span></li>

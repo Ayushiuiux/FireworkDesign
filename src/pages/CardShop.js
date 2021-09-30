@@ -44,7 +44,7 @@ export default function CardShop() {
                                     <h2>Spark Classical Pack</h2>
                                     <div className="cardShop_rightTop">
                                         <div className="">
-                                            <Link to="/interstellar_trader_treasured">
+                                            <Link to="/interstellar_trader_classical">
                                                 <Image className="left_arrow_img" src={LeftArrow} fluid />
                                             </Link>
                                         </div>
