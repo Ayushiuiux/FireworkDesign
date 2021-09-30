@@ -10,6 +10,7 @@ import Header from './pages/header';
 import MainInterface from './pages/MainInterface';
 import CardCollection from './pages/CardCollection';
 import CardSynthesis from './pages/CardSynthesis';
+
 import Starship from './pages/Starship';
 import StarshipEquipment from './pages/StarshipEquipment';
 import StarshipUpgrade from './pages/StarshipUpgrade';
@@ -114,36 +115,36 @@ function App() {
         ConfirmGoods value_id = { 1 }
         value_price = { 10 }
         value_offer = { `Package 1 get` }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/confirm_goods/package_2" >
         <
         ConfirmGoods value_id = { 2 }
         value_price = { 20 }
         value_offer = { `Package 2 get` }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/confirm_goods/package_6" >
         <
         ConfirmGoods value_id = { 6 }
         value_price = { 60 }
         value_offer = { `Package 6 get` }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/confirm_goods/package_11" >
         <
         ConfirmGoods value_id = { 11 }
         value_price = { 100 }
         value_offer = { `Exclusive Package 10 get 1 free` }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/confirm_goods/package_22" >
         <
         ConfirmGoods value_id = { 22 }
         value_price = { 200 }
         value_offer = { `Supreme Package 20 get 2 free` }
-        /> <
-        /Route> <
+        /> < /
+        Route > <
         Route path = "/open_package" >
         <
         OpenPackage / >
@@ -168,10 +169,10 @@ function App() {
         <
         CampPack / >
         <
-        /Route> <
-        /Switch> <
-        /BrowserRouter> <
-        /div>
+        /Route> < /
+        Switch > <
+        /BrowserRouter> < /
+        div >
     );
 }
 
