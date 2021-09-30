@@ -26,91 +26,153 @@ import Carousel from './pages/Carousel';
 import TreasueredPack from './pages/TreasueredPack';
 import CampPack from './pages/CampPack';
 
-
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" >
-            <Login />
-          </Route>
-          <Router path="/login-header">
-            <LoginHeader />
-          </Router>
-          <Route path="/header">
-            <Header />
-          </Route>
-          <Route path="/tech-center">
-            <MainInterface />
-          </Route>
-          <Route path="/card-collection-interface">
-            <CardCollection />
-          </Route>
-          <Route path="/card-synthesis">
-            <CardSynthesis />
-          </Route>
-          <Route path="/startship">
-            <Starship />
-          </Route>
-          <Route path="/starship_equipment">
-            <StarshipEquipment />
-          </Route>
-          <Route path="/starship_upgrade">
-            <StarshipUpgrade />
-          </Route>
-          <Route path="/starship_mining">
-            <StarshipMining />
-          </Route>
-          <Route path="/high_risk_mining">
-            <HighRiskMining />
-          </Route>
-          <Route path="/interstellar_trader_treasured">
-            <InterstellarTraderTreasured />
-          </Route>
-          <Route path="/interstellar_trader_classical">
-            <InterstellarTraderClassical />
-          </Route>
-          <Route path="/interstellar_trader_camp">
-            <InterstellarTraderCamp />
-          </Route>
-          <Route path="/card_shop">
-            <CardShop />
-          </Route>
-          <Route path="/confirm_goods/package_1">
-            <ConfirmGoods value_id = {1} value_price = {10} value_offer = {`Package 1 get`}/>
-          </Route>
-          <Route path="/confirm_goods/package_2">
-            <ConfirmGoods value_id = {2} value_price = {20} value_offer = {`Package 2 get`}/>
-          </Route>
-          <Route path="/confirm_goods/package_6">
-            <ConfirmGoods value_id = {6} value_price = {60} value_offer = {`Package 6 get`} />
-          </Route>
-          <Route path="/confirm_goods/package_11">
-            <ConfirmGoods value_id = {11} value_price = {100} value_offer = {`Exclusive Package 10 get 1 free`}/>
-          </Route>
-          <Route path="/confirm_goods/package_22">
-            <ConfirmGoods value_id = {22} value_price = {200} value_offer = {`Supreme Package 20 get 2 free`}/>
-          </Route>
-          <Route path="/open_package">
-            <OpenPackage/>
-          </Route>
-          <Route path="/swiper">
-            <Swiper/>
-          </Route>
-          <Route path="/carousel">
-            <Carousel/>
-          </Route>
-          <Route path="/treasuered-pack">
-            <TreasueredPack />
-          </Route>
-          <Route path="/camp-pack">
-            <CampPack />
-          </Route>
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
+    return ( <
+        div className = "App" >
+        <
+        BrowserRouter >
+        <
+        Switch >
+        <
+        Route exact path = "/" >
+        <
+        Login / >
+        <
+        /Route> <
+        Router path = "/login-header" >
+        <
+        LoginHeader / >
+        <
+        /Router> <
+        Route path = "/header" >
+        <
+        Header / >
+        <
+        /Route> <
+        Route path = "/tech-center" >
+        <
+        MainInterface / >
+        <
+        /Route> <
+        Route path = "/card-collection-interface" >
+        <
+        CardCollection / >
+        <
+        /Route> <
+        Route path = "/card-synthesis" >
+        <
+        CardSynthesis / >
+        <
+        /Route> <
+        Route path = "/startship" >
+        <
+        Starship / >
+        <
+        /Route> <
+        Route path = "/starship_equipment" >
+        <
+        StarshipEquipment / >
+        <
+        /Route> <
+        Route path = "/starship_upgrade" >
+        <
+        StarshipUpgrade / >
+        <
+        /Route> <
+        Route path = "/starship_mining" >
+        <
+        StarshipMining / >
+        <
+        /Route> <
+        Route path = "/high_risk_mining" >
+        <
+        HighRiskMining / >
+        <
+        /Route> <
+        Route path = "/interstellar_trader_treasured" >
+        <
+        InterstellarTraderTreasured / >
+        <
+        /Route> <
+        Route path = "/interstellar_trader_classical" >
+        <
+        InterstellarTraderClassical / >
+        <
+        /Route> <
+        Route path = "/interstellar_trader_camp" >
+        <
+        InterstellarTraderCamp / >
+        <
+        /Route> <
+        Route path = "/card_shop" >
+        <
+        CardShop / >
+        <
+        /Route> <
+        Route path = "/confirm_goods/package_1" >
+        <
+        ConfirmGoods value_id = { 1 }
+        value_price = { 10 }
+        value_offer = { `Package 1 get` }
+        /> <
+        /Route> <
+        Route path = "/confirm_goods/package_2" >
+        <
+        ConfirmGoods value_id = { 2 }
+        value_price = { 20 }
+        value_offer = { `Package 2 get` }
+        /> <
+        /Route> <
+        Route path = "/confirm_goods/package_6" >
+        <
+        ConfirmGoods value_id = { 6 }
+        value_price = { 60 }
+        value_offer = { `Package 6 get` }
+        /> <
+        /Route> <
+        Route path = "/confirm_goods/package_11" >
+        <
+        ConfirmGoods value_id = { 11 }
+        value_price = { 100 }
+        value_offer = { `Exclusive Package 10 get 1 free` }
+        /> <
+        /Route> <
+        Route path = "/confirm_goods/package_22" >
+        <
+        ConfirmGoods value_id = { 22 }
+        value_price = { 200 }
+        value_offer = { `Supreme Package 20 get 2 free` }
+        /> <
+        /Route> <
+        Route path = "/open_package" >
+        <
+        OpenPackage / >
+        <
+        /Route> <
+        Route path = "/swiper" >
+        <
+        Swiper / >
+        <
+        /Route> <
+        Route path = "/carousel" >
+        <
+        Carousel / >
+        <
+        /Route> <
+        Route path = "/treasuered-pack" >
+        <
+        TreasueredPack / >
+        <
+        /Route> <
+        Route path = "/camp-pack" >
+        <
+        CampPack / >
+        <
+        /Route> <
+        /Switch> <
+        /BrowserRouter> <
+        /div>
+    );
 }
 
 export default App;
