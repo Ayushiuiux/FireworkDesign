@@ -9,7 +9,7 @@ export default function SingleCard() {
                 <Row>
                     <Col lg={12}>
                         <div className="single_card_page">
-                                <Image className="single_card_img" src={CardImg}/>
+                            <Image className="single_card_img" src={CardImg} />
                         </div>
                     </Col>
                 </Row>

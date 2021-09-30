@@ -1827,6 +1827,7 @@ section.login_page_top {
     justify-content: flex-start;
     position: relative;
     z-index: 1;
+    padding: 8px;
 }
 
 .power_bar::before {
@@ -1856,7 +1857,7 @@ section.login_page_top {
     display: block;
     background: #FFBE00;
     width: 34px;
-    height: 16px;
+    height: 18px;
     border: 2px solid #b0730d;
     box-shadow: 0px 0px 20px #ea970e;
     margin-right: 0px !important;
@@ -2127,10 +2128,21 @@ section.login_page_top {
 }
 
 .card_shop_page {
+    position: relative;
+}
+
+.card_shop_page::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
     background-image: url('../images/interstellar-page/cardshop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: -1;
 }
 
 .cardShop_page_lft {
@@ -2661,7 +2673,7 @@ section.login_page_top {
 
 .wallet_popup_div {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
+    width: 50%;
     margin: auto;
 }
 
@@ -2822,3 +2834,56 @@ section.login_page_top {
 
 
 /* -------------------------------------- Treasuered Pack Page ------------------------------------- */
+
+
+/* -------------------------------------- Camp Pack Page ------------------------------------- */
+
+.premium_pack_div {
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-image: url('../images/interstellar-page/premium-pack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 10px 0px 10px;
+    margin-top: 20px;
+    position: relative;
+    height: 300px;
+    display: flex;
+}
+
+.premium_btm_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.premium_pac_txtDiv {
+    color: burlywood;
+    font-size: 25px;
+}
+
+.premium_label {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-image: url('../images/interstellar-page/label.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 116px;
+    height: 40px;
+    color: burlywood;
+    padding-top: 7px;
+    opacity: .6;
+}
+
+.premium_pac_numDiv {
+    color: burlywood;
+    font-size: 30px;
+    position: absolute;
+    top: 65px;
+    right: 125px;
+    opacity: .6;
+}
+
+
+/* -------------------------------------- Camp Pack Page ------------------------------------- */
