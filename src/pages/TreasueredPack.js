@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import LeftArrow from '../assets/images/interstellar-page/left_arrow.png';
-import Pack from '../assets/images/interstellar-page/pack-1.png';
-// import Subtraction from '../assets/images/interstellar-page/Subtraction.png';
-// import SupremePack from '../assets/images/interstellar-page/supreme-pack.png';
 import { Link } from 'react-router-dom';
 import Brand from '../assets/images/char_brand.png';
 import TimeLeft from '../assets/images/interstellar-page/clock-icon.png';

@@ -457,12 +457,13 @@ section.login_page_top {
 
 .characters_box_right {
     position: relative;
+    height: 100%;
 }
 
 .characters_box_right::before {
     content: '';
     background-image: url('../images/card_coll_style.png');
-    background-size: contain;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     position: absolute;
     left: -24px;
@@ -2913,3 +2914,133 @@ section.login_page_top {
     right: 5%;
     top: 4%;
 }
+
+
+/* Storage css start here */
+
+.storage_box_left {
+    padding: 15px 10px 15px 0;
+}
+
+.storage_detail_form ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+.storage_detail_form li:first-child {
+    /* width: 40px; */
+    width: 14%;
+    margin-right: 8px !important;
+}
+
+.storage_detail_form li:last-child {
+    width: calc(100% - 15%);
+    margin-left: auto;
+}
+
+.storg_boxe_effect {
+    position: relative;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.storg_boxe_effect::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/storage_box_effect.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gray_strg_effect::before {
+    filter: grayscale(1);
+}
+
+.storg_boxe_effect::after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    bottom: 10px;
+    top: auto;
+    width: 90%;
+    height: 30px;
+    background-image: url('../images/storage_box_btm.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.storg_boxes {
+    position: relative;
+    padding: 25px 15px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.storage_pack_img {
+    width: 55%;
+    margin: 15px auto;
+}
+
+.stry_pro_name {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.storg_boxes ul {
+    display: flex;
+    align-items: center;
+}
+
+.storg_boxes ul li:first-child {
+    width: 60%;
+    text-align: left;
+}
+
+.strg_box_qunty {
+    display: flex;
+    width: 65%;
+    align-items: center;
+    background-image: url('../images/strg_box_qunty_img.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+
+.strg_box_qunty .strg_qnty_img {
+    width: 30px;
+}
+
+.strg_box_qunty p {
+    width: calc(100% - 35px);
+    margin-left: auto;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.storg_boxes ul li:last-child {
+    width: 45%;
+}
+
+.storg_open_btn {
+    color: #fff !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-image: url('../images/storage_open.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 8px;
+}
+
+
+/* Storage css close here */

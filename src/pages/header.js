@@ -33,6 +33,7 @@ export default function Header() {
                             <Link to="/tech-center" className="menu_links nav-link">Tech Center</Link>
                             <Link to="#" className="menu_links nav-link">NFT Trading Market</Link>
                             <Link to="#" className="menu_links nav-link">Star Chain</Link>
+                            <Link to="/storage" className="menu_links nav-link">Storage</Link>
                             <Link to="#" className="menu_links nav-link">Game Download</Link>
                         </Nav>
                         <ul className="list-inline mb-0 mx-2">
